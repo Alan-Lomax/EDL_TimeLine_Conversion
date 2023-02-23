@@ -11,31 +11,37 @@ Creating these snippets by hand is tedious and subject to errors.
 ## An Excel Automation Tool
 
 In video editing software it is common to be able to use markers on the timelne to indicate chapters.
-These markers can be saved as an Edit Data List (EDL file) which has the raw data needed for our automation..
-This spreadsheet tool will import the EDL file and transform it into two different output text formats.
-One is a text format that can be pasted directly into the YouTube description box (when publisinbg the video)
-The second is in the form of a markup code snippet (with the same chapter content) that can be pasted into a Wiki (for example the MERG knowledge base.)
+These markers can then be saved as an Edit Data List (EDL file). This spreadsheet tool import the EDL file and transform it into two different output text formats.
+One format can be pasted directly into the YouTube description box (when publishing the video). 
+The second format is a markup code snippet that can be pasted into a Wiki edit page. (for example the MERG knowledge base.)
 
-After using this tool the final step is for the user to copy one or both of these text outputs and paste them into the destination.
+The user need only copy one or both of these text outputs and paste them into the destination.
+
+## Benefits
+- Automatic chapter markings from the EDL list
+- Consistent error free code snippets
+- Efficiency: The total work time is less than 5 minutes 
 
 ## How it Works
-Using a button on the instructions page a template is copied to a working sheet
+Using a button on the instructions page a template worksheet is copied over to a working sheet. (Tab Color Yellow)
+
 On the working sheet a second button invokes VBA code which:
-   Opens A windows dialog box to locate an EDL file of your choice
-   The file is handed off to an extensive PowerQuery script that reads the EDL file (The EDL file is unchanged)
-   The Script output text is dropped into a new Query Table on the EDL processing sheet (normally hidden).
+   + Opens A windows dialog box to locate an EDL file of your choice
+   + The file is handed off to an extensive PowerQuery script that reads the EDL file (The EDL file itself is not altered)
+   + The Script output text is dropped into a new Query Table on the EDL processing sheet (which is normally hidden).
+
 In the Working copy of the main Excel Spreadhseet
-   There are a few cells which must be manually entered:
-      Link to the YouTube video
-      Titles and Dates of the Video
-      A One Line Description amd a Longer Description.
-   Extensive text processing is done to take the processed EDL data and surround it with appropriate 'fixed text' and these values.
-   Two output blocks show the final texts.
-   Once happy with the results a Third and Final button will convert all formulae to values - so the Working copy is preserved. 
-   (The working copy can be manually edited - but all of the formuale are removed.)
+   + There are a few cells which must be manually entered:
+     +   The Link to the YouTube video
+     +   Titles and Dates of the Video
+     +   A One Line Description and a Longer Description.
+   + Extensive text processing is done to take the processed EDL data and surround it with appropriate 'fixed text' and these values.
+   + Two output blocks contain the final texts.
+   + These output texts can be copied to the destination
+
+Once happy with the results a Third and Final button will convert all formulae to values - so the Working copy is preserved. (Tab Color Green)
+(The working copy can still be manually edited and recopied to the destination but all of the formuale are removed.)
    
-   ### Note:
-   If the working sheet was not 'frozen' in this way ..
-   Any subsequent processing of a different EDL file will update the EDL_Processing sheet.
-   This would cause all working sheets that had not been frozem to update - which is not likely the intent. 
-   
+### Note:
+If the working sheet was not 'frozen' in this way any subsequent processing of a different EDL file will update the EDL_Processing sheet.
+This would cause all working sheets that had not been frozem to update - which is not likely the intent. 
