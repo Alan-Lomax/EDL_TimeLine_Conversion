@@ -45,3 +45,6 @@ Once happy with the results a Third and Final button will convert all formulae t
 ### Note:
 If the working sheet was not 'frozen' in this way any subsequent processing of a different EDL file will update the EDL_Processing sheet.
 This would cause all working sheets that had not been frozem to update - which is not likely the intent. 
+
+In Davinci resolve the default behaviour has the timeline start at 01 hrs. 
+For Chapter markers to work properly this must be reconfigured so the start timecode is 00 hrs.
