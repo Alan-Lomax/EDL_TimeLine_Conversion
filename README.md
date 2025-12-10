@@ -4,17 +4,27 @@ When posting videos to YouTube or another Website / Wiki it is desirable to incl
 
 
 # Work Flow
-> Edit your video in DaVinci resolve or similar. Create chapter markers at significant points in the video. (not more than one every 5 minutes
-> Render your video for publishing to YouTube
-> From the Timeline Export the markers to an EDL file
-> Start this worksheet. On the Instructions tab is a button to create a new worksheet. (it copies a template sheet as a starting point)
-> In YouTube upload your video. 
-> Copy the Link and paste it into the spreadsheet where indicated. Note: Very early in the upload process YouTube presents you with a link that will be valid for your video (even though it may not have finished uploading yet)
-> Click the button ìImport EDLî. A standard windows dialog will open so you can find the file and click on it. Once done an excel power query will read and parse the EDL file and drop the resulting data into your worksheet.
-> Fill in any remaining data as desired (yellow boxes at top of sheet). Date and duration of the video for example.
-> At the bottom of the sheet are two output areas. One for YouTube and one for the MERG Wiki.
-> Copy the YouTube data from the Excel and past it into the description box for your YouTube video. (Which may still be uploading)
-> Copy the MERG Wiki Knowledgebase output for pasting into the WIKI as desired.
+o  Edit your video in DaVinci resolve or similar. Create chapter markers at significant points in the video. (not more than one every 5 minutes
+
+o  Render your video for publishing to YouTube
+
+o  From the Timeline Export the markers to an EDL file
+
+o  Start this worksheet. On the Instructions tab is a button to create a new worksheet. (it copies a template sheet as a starting point)
+
+o  In YouTube upload your video. 
+
+o  Copy the Link and paste it into the spreadsheet where indicated. Note: Very early in the upload process YouTube presents you with a link that will be valid for your video (even though it may not have finished uploading yet)
+
+o  Click the button ‚ÄúImport EDL‚Äù. A standard windows dialog will open so you can find the file and click on it. Once done an excel power query will read and parse the EDL file and drop the resulting data into your worksheet.
+
+o  Fill in any remaining data as desired (yellow boxes at top of sheet). Date and duration of the video for example.
+
+o  At the bottom of the sheet are two output areas. One for YouTube and one for the MERG Wiki.
+
+o  Copy the YouTube data from the Excel and past it into the description box for your YouTube video. (Which may still be uploading)
+
+o  Copy the MERG Wiki Knowledgebase output for pasting into the WIKI as desired.
 
 
 
